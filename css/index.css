@@ -97,7 +97,9 @@ a:hover {
   display: block;
   overflow: hidden;
   height: 100vh;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/photo.jpg");
+  /* background-image: url("http://www.ivang-design.com/svg-load/portfolio/photo.jpg"); */
+  background-image: url("/img/bg2.jpg");
+
   background-size: cover;
   background-position: center;
   transform: scale(1) rotateX(0);
@@ -399,8 +401,8 @@ body.contact-on .contact-section {
 }
 
 .subject-section,
-.wildlife-section,
-.nature-section {
+.portrait-section,
+.other-section {
   position: fixed;
   top: 100%;
   left: 0;
@@ -444,19 +446,19 @@ body.subject-on .subject-section {
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-body.wildlife-on .wildlife-section {
+body.wildlife-on .portrait-section {
   top: 0;
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-body.nature-on .nature-section {
+body.nature-on .other-section {
   top: 0;
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
 }
 .subject-section img,
-.wildlife-section img,
-.nature-section img {
+.portrait-section img,
+.other-section img {
   margin-top: 30px;
   width: 100%;
   height: auto;
@@ -465,8 +467,8 @@ body.nature-on .nature-section {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 .subject-section h3,
-.wildlife-section h3,
-.nature-section h3 {
+.portrait-section h3,
+.other-section h3 {
   font-size: 44px;
   line-height: 1.3;
   font-weight: 700;
@@ -474,15 +476,15 @@ body.nature-on .nature-section {
   color: #fff;
 }
 .subject-section p,
-.wildlife-section p,
-.nature-section p {
+.portrait-section p,
+.other-section p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 1px;
 }
 .subject-section p span,
-.wildlife-section p span,
-.nature-section p span {
+.portrait-section p span,
+.other-section p span {
   font-size: 20px;
   line-height: 1.3;
   font-weight: 700;

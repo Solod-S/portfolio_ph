@@ -1,0 +1,15 @@
+.row {
+  margin: 15px;
+}
+
+.col-md-4:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+.col-md-4 {
+  opacity: 0.8;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

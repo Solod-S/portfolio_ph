@@ -19,8 +19,15 @@ body {
   height: 100vh;
   -webkit-transition: all 300ms linear;
   transition: all 300ms linear;
-  perspective: 800px;
+  /* perspective: 800px; */
 }
+
+@media (min-width: 1440px) {
+  body {
+    perspective: 800px;
+  }
+}
+
 a {
   cursor: pointer;
 }
@@ -97,9 +104,7 @@ a:hover {
   display: block;
   overflow: hidden;
   height: 100vh;
-  /* background-image: url("http://www.ivang-design.com/svg-load/portfolio/photo.jpg"); */
-  background-image: url("/img/bg2.jpg");
-
+  background-image: url("/img/bg/bg2-min.jpg");
   background-size: cover;
   background-position: center;
   transform: scale(1) rotateX(0);
@@ -110,6 +115,43 @@ a:hover {
   transition-delay: 400ms;
   transform-origin: center top;
 }
+
+.hero-section.subject {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("/img/bg/bg4-min.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1) rotateX(0);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+  transform-origin: center top;
+}
+
+.hero-section.design {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("/img/bg/bg5-min.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1) rotateX(0);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+  transform-origin: center top;
+}
+
 .hero-section h1 {
   color: #fff;
   font-size: 5vw;
@@ -156,7 +198,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/down.svg");
+  background-image: url("/img/system/down.svg");
   opacity: 0.2;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -186,7 +228,7 @@ body.wildlife-on .hero-section {
   -webkit-transition-delay: 0ms;
   transition-delay: 0ms;
 }
-body.nature-on .hero-section {
+body.other-on .hero-section {
   transform: rotateX(-10deg);
   -webkit-transition-delay: 0ms;
   transition-delay: 0ms;
@@ -223,7 +265,7 @@ body.nature-on .hero-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/left.svg");
+  background-image: url("/img/system/left.svg");
   opacity: 0.2;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -264,7 +306,7 @@ body.about-on .about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/close.svg");
+  background-image: url("/img/system/close.svg");
   cursor: pointer;
   z-index: 11;
 }
@@ -324,7 +366,7 @@ body.about-on .about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/left.svg");
+  background-image: url("/img/system/left.svg");
   opacity: 0.2;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -365,7 +407,7 @@ body.contact-on .contact-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/close.svg");
+  background-image: url("/img/system/close.svg");
   cursor: pointer;
   z-index: 11;
 }
@@ -419,7 +461,7 @@ body.contact-on .contact-section {
 }
 .subject-close,
 .wildlife-close,
-.nature-close {
+.other-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -432,13 +474,13 @@ body.contact-on .contact-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url("http://www.ivang-design.com/svg-load/portfolio/close.svg");
+  background-image: url("/img/system/close.svg");
   cursor: pointer;
   z-index: 11;
 }
 .subject-close:hover,
 .wildlife-close:hover,
-.nature-close:hover {
+.other-close:hover {
   transform: rotate(90deg);
 }
 body.subject-on .subject-section {
@@ -451,7 +493,7 @@ body.wildlife-on .portrait-section {
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-body.nature-on .other-section {
+body.other-on .other-section {
   top: 0;
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
@@ -490,29 +532,13 @@ body.nature-on .other-section {
   font-weight: 700;
   color: #866baf;
 }
-/* #Link to page
-================================================== */
 
-.link-to-portfolio {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 200;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 3px;
-  background-position: center center;
-  background-size: 65%;
-  background-repeat: no-repeat;
-  background-image: url("https://assets.codepen.io/1462889/fcy.png");
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
-  transition: opacity 0.2s, border-radius 0.2s, box-shadow 0.2s;
-  transition-timing-function: ease-out;
+.download-btn:hover {
+  display: block;
+  transform: scale(1.1);
 }
-.link-to-portfolio:hover {
-  opacity: 0.8;
-  border-radius: 50%;
-  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+
+.download-btn {
+  display: block;
+  transition: transform 300ms linear;
 }

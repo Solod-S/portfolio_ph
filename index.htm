@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- ==========================Gallery========================  -->
     <link
@@ -26,15 +26,16 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
 
-    <title>Solod Sergey Photograph</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Solod Sergey photographer</title>
   </head>
   <body>
     <div class="hero-section">
-      <div class="about-text hover-target">about</div>
-      <div class="contact-text hover-target">contact</div>
+      <div class="about-text hover-target" data-aos="fade-right">about</div>
+      <div class="contact-text hover-target" data-aos="fade-left">contact</div>
       <div class="section-center">
         <div class="container-fluid">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" data-aos="flip-up">
             <div class="col-12 text-center">
               <h1>Solod Sergey</h1>
             </div>
@@ -43,9 +44,13 @@
             </div>
             <div class="col-12 text-center mt-4 mt-lg-5">
               <p>
-                <span class="subject hover-target">subject</span>
-                <span class="wildlife hover-target">portrait</span>
-                <span class="nature hover-target">design</span>
+                <span class="subject hover-target" data-aos="fade-up"
+                  >subject</span
+                >
+                <!-- <span class="wildlife hover-target">portrait</span> -->
+                <span class="other hover-target" data-aos="fade-up"
+                  >design</span
+                >
               </p>
             </div>
           </div>
@@ -59,18 +64,21 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img src="./img/me.jpg" alt="" class="about-img" />
+              <img src="./img/me2.jpg" alt="" class="about-img" />
             </div>
             <div class="col-lg-8 text-center mt-4">
               <p>
                 Creative and focused result specialist. I have good developed
-                skills in subject matter photographs (worked for direction
+                skills in subject matter photography (worked for direction
                 content manager/ subject photographer/retoucher about 10 years).
                 I'm also have HTML/CSS/JS skills.
               </p>
             </div>
             <div class="col-12 text-center">
               <p><span>Solod Sergey</span></p>
+              <a class="download-btn" href="/Solod S Photographer.pdf" download
+                >download resume</a
+              >
             </div>
           </div>
         </div>
@@ -96,7 +104,7 @@
                 href="https://t.me/sergey_nicol"
                 target="_blank"
                 class="hover-target"
-                >Telegmar</a
+                >Telegram</a
               >
               <a
                 href="https://www.facebook.com/sergsolik"
@@ -128,7 +136,7 @@
           </div>
           <div class="col-12 text-center">
             <p>
-              This section features a collection of product photographs<br />
+              This section features a collection of product photography<br />
               tailored for various companies (e.g., MakeupUA, PanamaUA,
               Unilever, etc.),<br />
               showcasing a range of items.<br />
@@ -453,7 +461,7 @@
       </div>
     </div>
 
-    <div class="portrait-section">
+    <!-- <div class="portrait-section">
       <div class="wildlife-close hover-target"></div>
       <div class="container">
         <div class="row justify-content-center">
@@ -466,7 +474,7 @@
           <div class="col-12 text-center">
             <p>
               Within this section, you'll find a collection of portrait
-              photographs,<br />
+              photography,<br />
               highlighting the artistry and craftsmanship of portrait
               photography.<br />
             </p>
@@ -478,6 +486,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/1.jpg" class="img-fluid rounded" />
               </a>
@@ -486,6 +495,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/2.jpg" class="img-fluid rounded" />
               </a>
@@ -494,6 +504,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/3.jpg" class="img-fluid rounded" />
               </a>
@@ -502,6 +513,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/4.jpg" class="img-fluid rounded" />
               </a>
@@ -510,6 +522,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/5.jpg" class="img-fluid rounded" />
               </a>
@@ -518,6 +531,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/6.jpg" class="img-fluid rounded" />
               </a>
@@ -526,6 +540,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/7.jpg" class="img-fluid rounded" />
               </a>
@@ -534,6 +549,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/8.jpg" class="img-fluid rounded" />
               </a>
@@ -542,6 +558,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/9.jpg" class="img-fluid rounded" />
               </a>
@@ -550,6 +567,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/10.jpg" class="img-fluid rounded" />
               </a>
@@ -558,6 +576,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/11.jpg" class="img-fluid rounded" />
               </a>
@@ -566,6 +585,7 @@
                 data-toggle="lightbox"
                 data-gallery="gallery"
                 class="col-md-4"
+                
               >
                 <img src="/img/portrait/12.jpg" class="img-fluid rounded" />
               </a>
@@ -573,10 +593,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="other-section">
-      <div class="nature-close hover-target"></div>
+      <div class="other-close hover-target"></div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
@@ -700,6 +720,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/changeBg.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 <!-- https://codepen.io/stefcharle/pen/Gydvbx -->
